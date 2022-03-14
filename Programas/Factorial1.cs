@@ -1,0 +1,31 @@
+//Factorial1
+
+using System;
+
+class Factorial1
+{
+    static void Main()
+    {
+        //Declaracion de Variables
+        String mensaje="Programa que calcula el factorial de un numero";
+        int numero = 0, factorial = 1;
+
+        //Pantalla
+        Console.Clear();
+        Console.WriteLine(mensaje);
+
+        //Entrada de Datos
+        Console.Write("\nItroduzca numero para calcular el factorial: ");
+        numero = int.Parse(Console.ReadLine());
+
+        //Proceso
+        for(int i=1; i<=numero; i++)
+        {
+            factorial = factorial * i;
+        }
+
+        //Salida
+        Console.WriteLine("El factorial del número {0} es {1}",numero,factorial);
+        Console.ReadLine();
+    }
+}
