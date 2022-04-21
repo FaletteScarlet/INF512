@@ -2,14 +2,14 @@
 
 using System;
 
-class ELEVATORWELL
+class Elevatorwell
 {
     private int numeroPiso;
     private int numeroPisoSolicitado;
     private bool encendidoApagado;
     private int hora;
 
-    public ELEVATORWELL(int hora)
+    public Elevatorwell(int hora)
     {
         setHora(hora);
         setEncendidoApagado();
@@ -233,7 +233,7 @@ class ELEVATORWELL
 
 }
 
-class TesterELEVATORWELL
+class TesterElevatorwell
 {
     static void Main()
     {
@@ -243,7 +243,7 @@ class TesterELEVATORWELL
         Console.WriteLine("\nDigite la hora en formato 2400: ");
         hora= int.Parse(Console.ReadLine());
 
-        ELEVATORWELL miElevatorwell = new ELEVATORWELL(hora);
+        Elevatorwell miElevatorwell = new Elevatorwell(hora);
 
         miElevatorwell.setHora(hora);
         miElevatorwell.setEncendidoApagado();
